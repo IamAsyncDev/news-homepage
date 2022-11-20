@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
 }
 
-/* ====== HEADER ================================*/
+/* === HEADER ================================= */
 .header {
   padding-top: 85px;
   padding-bottom: 51px;
@@ -66,10 +66,10 @@ body {
   color: hsl(35, 77%, 62%);
 }
 
-/* ====== MAIN ===================================*/
+/* === MAIN ================================= */
 .main {
   display: grid;
-  row-gap: 38px;
+  /* row-gap: 38px; */
 }
 
 .first-screen {
@@ -121,7 +121,7 @@ body {
   max-width: fit-content;
 }
 
-/* === LINK LIKE A BUTTON =========== */
+/* === LINK LIKE A BUTTON =================================  */
 .link-btn {
   display: inline-block;
   padding: 14px 28px 14px;
@@ -147,6 +147,7 @@ body {
 
 .aside-panel {
   padding: 28px 24px 0;
+
   color: hsl(0, 0%, 100%);
   background-color: hsl(240, 100%, 5%);
 }
@@ -195,9 +196,76 @@ body {
   line-height: 170%;
 }
 
-.aside-bottom {
+.bottom-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 
-  padding-top: 36px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.article-additional {
+  counter-increment: ol;
+  position: relative;
+
+  padding-top: 44px;
+  padding-left: 100px;
+  min-height: 127px;
+
+  background-image: url('./assets/images/image-retro-pcs.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.article-additional::before {
+  content: "0" counter(ol);
+
+  position: absolute;
+  top: 0;
+  left: calc(100px + 24px);
+
+  font-weight: 800;
+  font-size: 32px;
+
+  color: hsl(233, 8%, 79%);
+}
+
+.article-additional--top-laptops {
+  background-image: url('./assets/images/image-top-laptops.jpg');
+}
+
+.article-additional--gaming-growth {
+  background-image: url('./assets/images/image-gaming-growth.jpg');
+}
+
+.article-additional__content {
+  padding-left: 24px;
+}
+
+.article-additional__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.article-additional__subheading {
+  margin-top: 9px;
+  margin-bottom: 0;
+
+  line-height: 170%;
+}
+
+.article-additional__link {
+  padding: 12px 0 11px;
+  text-decoration: none;
+}
+
+.article-additional__link:link,
+.article-additional__link:visited {
+  color: inherit;
+}
+
+.article-additional__link:hover {
+  color: hsl(35, 77%, 62%);
 }

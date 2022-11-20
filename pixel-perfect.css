@@ -5,6 +5,7 @@
 
 p {
   font-size: 15px;
+  color: hsl(250, 4%, 29%);
 }
 
 .promo__heading {
@@ -21,7 +22,15 @@ p {
   font-size: 15px;
 }
 
+.bottom-strip {
+  padding-top: 37px;
+}
+
 .article__subheading {
   padding-right: 12px;
   line-height: 171%;
+}
+
+.article-additional::before {
+  top: -4px;
 }
