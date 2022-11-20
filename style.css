@@ -67,10 +67,6 @@ body {
 }
 
 /* === MAIN ================================= */
-.main {
-  display: grid;
-  /* row-gap: 38px; */
-}
 
 .first-screen {
   display: grid;
